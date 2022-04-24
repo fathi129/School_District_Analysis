@@ -20,7 +20,61 @@ The purpose of this analysis,school board has notified Maria that the file shows
 *Language*: Python 3.9.7. 
 
 ## Analysis Results
-After replacing the math and reading score for the ninth graders with NaN in Thomas High School.The student data frame looked like this
-<img src = ""
+The `loc()` method is used for finding the ninth graders and replacing the values.After replacing the math and reading score for the ninth graders with NaN in Thomas High School. The student data frame looked like this
+<img src = "https://github.com/fathi129/School_District_Analysis/blob/master/Screenshots/Replacing%20with%20NaN.png" width = 700> <br>
+The district summary for the updated file is calculated by finding the school count,students count,total budget,average math score ,average reading score,pass percentage in math and reading,overall pass percentage and the results are shown below <br><br>
 
+***Updated Analysis*** <br>
+<img src = "https://github.com/fathi129/School_District_Analysis/blob/master/Screenshots/Comparision/District_Summary_updated.png" width = 900><br>
+***Original Analysis*** <br>
+ <img src = "https://github.com/fathi129/School_District_Analysis/blob/master/Screenshots/Comparision/District_Summary_original.png" width = 900><br>
+ - By changing NaN to math and reading scores of all the ninth graders in Thomas High School did not have a large impact on the district analysis.We could see less than 0.5 percentage point decrease in the overall passing metric,other metrics too have less changes.As the student count of ninth graders in Thomas High school is only 461 when compared to total student count of 39170,so removing math and reading scores impacts the overall passing with little percentage.<br>
+ 
+***School Summary with updated analysis*** <br>
+<img src = "https://github.com/fathi129/School_District_Analysis/blob/master/Screenshots/Comparision/School_Summary_THS.png" width = 900><br>
+***School Summary with original analysis*** <br>
+<img src = "https://github.com/fathi129/School_District_Analysis/blob/master/Screenshots/Comparision/SchoolSummary_original.png" width = 900><br>
+The school summary is calculated with the updated Thomas high School reading and math scores,We can see that the overall passing percentage is decreased to 65% from the original analysis of 91%.Which made Thomas high school to go to rank of 8th place from the initial analysis of 2nd place,In which it was in the top performing schools.After recalculating the metrics by including 10th to 12th graders,the overall passing percentage of the thomas high school has been improved which made it to be in the top performing schools again.<br>
+
+***School Summary with updated THS analysis including 10th - 12th graders*** <br>
+<img src = "https://github.com/fathi129/School_District_Analysis/blob/master/Screenshots/Comparision/SchoolSummary_updated.png" width = 900><br>
+
+***Top Performing Schools - Updated Analysis*** <br>
+<img src = "https://github.com/fathi129/School_District_Analysis/blob/master/Screenshots/Comparision/Top5.png" width = 900><br>
+***Top Performing Schools - Original Analysis*** <br>
+<img src = "https://github.com/fathi129/School_District_Analysis/blob/master/Screenshots/Comparision/Top5_original.png" width = 900><br>
+- The rank of the Thomas High School was not affected by the update.
+- But we can see some changes in average reading,math,pass percentage and overall pass percentage by less than 0.3 percentage point in each metric.<br>
+***Bottom Schools - Updated Analysis*** <br>
+<img src = "https://github.com/fathi129/School_District_Analysis/blob/master/Screenshots/Comparision/%20Bottom5.png" width = 900><br>
+***Bottom Schools - Original Analysis*** <br>
+<img src = "https://github.com/fathi129/School_District_Analysis/blob/master/Screenshots/Comparision/Bottom5_original.png" width = 900><br>
+- The ranking of the bottom schools were not affected by the changes we made in the Thomas High School.<br>
+
+***Math Scores - Updated Analysis*** <br>
+<img src = "https://github.com/fathi129/School_District_Analysis/blob/master/Screenshots/Comparision/Math_Scores.png" width = 400><br>
+***Math Scores - Original Analysis*** <br>
+<img src = "https://github.com/fathi129/School_District_Analysis/blob/master/Screenshots/Comparision/Math_Score_original.png" width = 400><br>
+- When we see the math and read scores in all the grade levels.It dint affect the updated analysis as we changed only 9th graders to NaN.<br>
+
+***School Spending - Updated Analysis*** <br>
+<img src = "https://github.com/fathi129/School_District_Analysis/blob/master/Screenshots/Comparision/Spending_range_updated.png" width = 900><br>
+***School Spending - Original Analysis*** <br>
+<img src = "https://github.com/fathi129/School_District_Analysis/blob/master/Screenshots/Comparision/Spending_range_original.png" width = 900><br>
+- For performing school spending analyisis we need to cut the data frame in to bins and we need to label with range.By categorizing in to bins each school will fall in to the respective range,then average of all the metric is calculated and displayed.
+- We can see a slight change in the $630 - 644 spending range per student as Thomas High School falls in this range,how ever the change is very small each metric is less than 0.1 percentage points with the original.<br>
+
+***School Size - Updated Analysis*** <br>
+<img src = "https://github.com/fathi129/School_District_Analysis/blob/master/Screenshots/Comparision/Schoolsize_Original.png" width = 900><br>
+***School Size - Original Analysis*** <br>
+<img src = "https://github.com/fathi129/School_District_Analysis/blob/master/Screenshots/Comparision/Schoolsize_updated.png" width = 900><br>
+- The scores based on the School size are calculated,In the medium size school(1000-2000),we can see the changes less than 0.1 percentage points in all the metrics.This is because Thomas High School has student count of 1635 which belongs to medium school size group.<br>
+
+***School Type - Updated Analysis*** <br>
+<img src = "https://github.com/fathi129/School_District_Analysis/blob/master/Screenshots/Comparision/Schooltype_updated.png" width = 900><br>
+***School Type - Original Analysis*** <br>
+<img src = "https://github.com/fathi129/School_District_Analysis/blob/master/Screenshots/Comparision/Schooltype_original.png" width = 900><br>
+- Based on the school type the scores are calculated we could see there is a slight change in charter school type,since Thomas High School belongs to this type and the change is also less than 0.1 percentage points in each metric.<br>
+
+## Summary
 
